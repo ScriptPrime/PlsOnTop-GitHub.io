@@ -251,9 +251,9 @@
         </div>
     </div>
 
-    <div id="scriptModal" class="modal-overlay" onclick="closeModalOutside(event)">
+    <div id="scriptModal" class="modal-overlay" onclick="closeOutside(event)">
         <div class="modal-box">
-            <div class="image-container" style="padding-top: 40%;"></div>
+            <div class="image-container" style="padding-top: 40%; background-image: url('dragon.jpg');"></div>
             <div class="modal-body">
                 <div class="modal-header-row">
                     <h2 class="modal-title">🐱 PlsHub Script | Blox Fruits</h2>
@@ -283,7 +283,7 @@
             modal.classList.remove('active');
         }
 
-        function closeModalOutside(e) {
+        function closeOutside(e) {
             if (e.target === modal) {
                 closeModal();
             }
